@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<style>
+			/* bootstrap */
+
+			.m-0 {
+				margin: 0!important;
+			}
+
+			.mb-4 {
+				margin-bottom: 1.5rem!important;
+			}
+
+			.mb-5 {
+				margin-bottom: 3rem!important;
+			}
+
+			.mr-3 {
+				margin-right: 1rem!important;
+			}
+
+			.p-0 {
+				padding: 0!important;
+			}
+
+			.pt-4 {
+				padding-top: 1.5rem!important;
+			}
+
+			.pb-2 {
+				padding-bottom: .5rem!important;
+			}
+
+			.pl-2 {
+				padding-left: .5rem!important;
+			}
+
+			.pr-2 {
+				padding-right: .5rem!important;
+			}
+
+			/* col */
+
+			.container {
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			@media (min-width: 576px) {
+				.container {
+					max-width: 540px;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.container {
+					max-width: 720px;
+				}
+			}
+
+			@media (min-width: 992px) {
+				.container {
+					max-width: 960px;
+				}
+			}
+
+			@media (min-width: 1200px) {
+				.container {
+					max-width: 1140px;
+				}
+			}
+
+			.row {
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				margin-right: -15px;
+				margin-left: -15px;
+			}
+
+			@media (min-width: 576px) {
+				.col-sm-3 {
+					-ms-flex: 0 0 25%;
+					flex: 0 0 25%;
+					max-width: 25%;
+				}
+
+				.col-sm-1 {
+					-ms-flex: 0 0 8.333333%;
+					flex: 0 0 8.333333%;
+					max-width: 8.333333%;
+				}
+			}
+
+			.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+				position: relative;
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+
+			@media (min-width: 768px) {
+				.col-md-6 {
+					-ms-flex: 0 0 50%;
+					flex: 0 0 50%;
+					max-width: 50%;
+				}
+
+				.col-md-12 {
+					-ms-flex: 0 0 100%;
+					flex: 0 0 100%;
+					max-width: 100%;
+				}
+			}
+
+			/* flex */
+
+
+			.d-flex {
+				display: -ms-flexbox!important;
+				display: flex!important;
+			}
+
+			.flex-column {
+				-ms-flex-direction: column!important;
+				flex-direction: column!important;
+			}
+
+			.justify-content-center {
+				-ms-flex-pack: center!important;
+				justify-content: center!important;
+			}
+
+			.justify-content-end {
+				-ms-flex-pack: end!important;
+				justify-content: flex-end!important;
+			}
+
+			.align-items-center {
+				-ms-flex-align: center!important;
+				align-items: center!important;
+			}
+
+
+			/* */
+
+			.text-center {
+				text-align: center!important;
+			}
+
+			*, ::after, ::before {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+				font-size: 1rem;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #212529;
+				text-align: left;
+				background-color: #fff;
+			}
+
+			html {
+				font-family: sans-serif;
+				line-height: 1.15;
+				-webkit-text-size-adjust: 100%;
+				-webkit-tap-highlight-color: transparent;
+			}
+		</style>
+		<style>
+			body {
+				background: lightgray;
+			}
+			
+			.page-container {
+				max-width: 90.75rem;
+				margin: auto;
+				margin-top: 0;
+			}
+			
+			.page-header {
+				position: relative;
+				overflow: hidden;
+				direction: rtl;
+				margin-bottom: -0.375rem;
+			}
+			
+			.page-header img {
+				width: 100%;
+			}
+			
+			.page-header .header-content {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				padding-left: 4rem;
+				padding-right: 4rem;
+				max-width: 43rem;
+				width: 60%;
+				direction: ltr;
+			}
+			
+			.page-header .header-content .title {
+				font-size: 2rem;
+				color: #c2d500;
+				margin-bottom: 1rem;
+			}
+			
+			.page-header .header-content .features {
+				font-size: 1rem;
+				color: white;
+				margin-bottom: 1rem;
+			}
+			
+			.page-header .header-content .features .feature {
+				margin-right: 0.8rem;
+				max-width: 9rem;
+			}
+			
+			.page-header .header-content .features .arrow img {
+				height: 3rem;
+				width: 2rem;
+			}
+			
+			.page-header .header-content .description {
+				font-size: 0.9rem;
+				color: white;
+			}
+			
+			.page-features {
+				color: #002855;
+			}
+			
+			.page-features .features-title {
+				max-width: 35rem;
+				font-size: 2rem;
+				margin: auto;
+				padding-top: 6rem;
+				padding-bottom: 6rem;
+			}
+			
+			.page-features .feature {
+				padding-bottom: 6rem;
+			}
+			
+			.page-features .feature .container {
+				margin: auto;
+				max-width: 75rem;
+			}
+			
+			.page-features .feature img {
+				margin-bottom: 1.5rem;
+			}
+			
+			.page-features .feature .image-name {
+				font-size: 1.6rem;
+				margin-bottom: 0.6rem;
+			}
+			
+			.page-features .feature .image-description {
+				font-size: 1em;
+				margin-bottom: 1rem;
+				margin-right: 4rem;
+				margin-left: 4rem;
+			}
+			
+			.page-features .feature .image-desc {
+				font-size: 0.9rem;
+				margin-right: 6rem;
+				margin-left: 6rem;
+			}
+			
+			.page-bottom {
+				position: relative;
+			}
+			
+			.page-bottom img {
+				width: 100%;
+				height: 26rem;
+			}
+			
+			.page-bottom .bottom-content {
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				color: white;
+				padding-left: 4rem;
+				padding-right: 4rem;
+			}
+			
+			.page-bottom .bottom-content .bottom-description {
+				font-size: 1.8rem;
+				font-style: italic;
+				max-width: 55rem;
+				margin-bottom: 2rem;
+			}
+			
+			.page-bottom .bottom-content .bottom-desc {
+				font-size: 1rem;
+				max-width: 55rem;
+			}
+			
+			.page-bottom-bar {
+				padding-right: 5rem;
+				padding-left: 5rem;
+				color: white;
+				background: #1b2c50;
+			}
+			
+			.page-bottom-bar-medidata {
+				font-size: 1.4rem;
+			}
+			
+			.page-bottom-bar-social {
+				text-align: right;
+			}
+			
+			i {
+				color: white;
+				border-radius: 1.25rem;
+				font-size: 1rem;
+				margin-left: 0.625rem;
+			}
+			
+			.page-bottom-bar-social .phone {
+				margin-top: 0.5rem;
+				color: white;
+				font-size: 0.8rem;
+				margin-bottom: 1.2rem;
+			}
+			
+			.page-bottom-bar-border {
+				width: 100%;
+				height: 0.1rem;
+				background: white;
+				opacity: 0.2;
+			}
+			
+			.page-bottom-bar-cright {
+				font-size: 0.7rem;
+				margin-top: 1rem;
+				margin-bottom: 0.5rem;
+			}
+			
+			.page-bottom-bar-cright .copyright {
+				opacity: 0.5
+			}
+			
+			.page-bottom-bar-cright .end ul {
+				display: flex;
+				list-style: none;
+			}
+			
+			.page-content {
+				background: white;
+				color: #002855;
+			}
+			.page-content .content-title {
+				max-width: 35rem;
+				font-size: 2rem;
+				margin: auto;
+				padding-top: 6rem;
+				padding-bottom: 2rem;
+			}
+			
+			.page-content .content-title .content-title-big {
+				font-size: 2rem;
+			}
+			
+			.page-content .content-title .content-title-small {
+				font-size: 1rem;
+			}
+			
+			.page-content .content-download-form {
+				max-width: 50rem;
+				margin: auto;
+				padding-bottom: 5rem;
+				font-size: 1.1rem;
+				font-weight: 500;
+			}
+			
+			.page-content .content-download-form input {
+				font-size: 1.5rem;
+				padding: 0.5rem;
+				margin-top: 0.3rem;
+			}
+			
+			.page-content .content-download-form .asset,
+			.page-content .policy {
+				padding-right: 0.9375rem;
+				padding-left: 0.9375rem;
+			}
+			
+			.page-content .download-btn {
+				background: #c2d500;
+				color: #002855;
+				font-size: 1.6rem;
+				padding: 0.8rem;
+				padding-right: 1.5rem;
+				padding-left: 1.5rem;
+			}
+			
+			@media (max-width: 75rem) {
+				.page-header img {
+					width: 75rem;
+					height: 32rem;
+				}
+			
+				.page-header .header-content .features .arrow img {
+					height: 3rem;
+					width: 2rem;
+				}
+			}
+			
+			@media (max-width: 75rem) {
+				.page-header .header-content {
+					width: 100%;
+				}
+			}
+			
+			@media (max-width: 35rem) {
+				.page-bottom .bottom-content .bottom-description {
+					font-size: 1.2rem;
+				}
+				
+				.page-bottom .bottom-content .bottom-desc {
+					font-size: 0.5rem;
+				}
+			}
+			
+			@media (max-width: 37rem) {
+				.page-header .header-content {
+					padding-right: 2rem;
+					padding-left: 2rem;
+				}
+			
+				.page-header .header-content .title {
+					font-size: 1.4rem;
+				}
+				
+				.page-header .header-content .features {
+					font-size: 0.6rem;
+				}
+				
+				.page-header .header-content .description {
+					font-size: 0.5rem;
+				}
+			}
+		</style>
+
+		<title>BRINGING</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="page-header">
+				<img src="images/header-back.png" />
+				<div class="header-content d-flex flex-column justify-content-center">
+					<div class="title">
+						BRINGING <span style="color: white">PATIENT CENTRICITY</span> INTO THE HEART OF EVERY CLINICAL TRIAL
+					</div>
+					<div class="features">
+						<div class="container m-0">
+							<div class="row">
+								<div class="feature col-sm-3 p-0">IMPROVE PATIENT EXPERIENCE</div>
+								<div class="arrow col-sm-1 p-0">
+									<img src="images/arrow.png" />
+								</div>
+								<div class="feature col-sm-3 p-0">ENHANCE DATA INTEGRITY</div>
+								<div class="arrow col-sm-1 p-0">
+									<img src="images/arrow.png" />
+								</div>
+								<div class="feature col-sm-3 p-0">INCREASETRIAL OUTCOME</div>
+							</div>
+						</div>
+					</div>
+					<div class="description">
+						Patient centricity – an emerging trend in clinical trials calls for more outcome analysis  based on patient’s perspective, measuring patient’s wellness and quality of life and not
+						just reversal of disease or extension of longevity.
+					</div>
+				</div>
+			</div>
+			<div class="page-bottom">
+				<img src="images/bottom-back.png" />
+				<div class="bottom-content d-flex flex-column justify-content-center align-items-center">
+					<div class="bottom-description text-center">
+						"THE FUTURE OF CLINICAL TRIALS WILL BE STUDIES THAT ARE DESIGNED FROM START TO FINISH TO MINIMIZE PATIENT BURDEN AND TO OPTIMIZE PASSIVE DATA CAPTURE."
+					</div>
+					<div class="bottom-desc text-center">
+						JEREMY SOHN, VP, GLOBAL HEAD OF DIGITAL BUSINESS DEVELOPMENT & LICENSING, NOVARTIS
+					</div>
+				</div>
+			</div>
+			<div class="page-features">
+				<div class="features-title text-center">
+					THE MEDIDATA PLATFORMS FOR PATIENT CENTRIC TRIALS
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="feature text-center col-md-6">
+							<img src="images/COA.png" />
+							<div class="image-name">Rave eCOA</div>
+							<div class="image-description">
+								Explore Rave eCOA - a single unified full-service clinical platform that captures, track, analyze, visualize and report on all types of patient data from any location on the map.
+							</div>
+							<div class="image-desc">
+								Rave eCOA Fact Sheet | Global Case Study from Memorial Sloan Kettering Cancer Centre
+							</div>
+						</div>
+						<div class="feature text-center col-md-6">
+							<img src="images/RAVE.png" />
+							<div class="image-name">Rave Enroll</div>
+							<div class="image-description">
+								Informed consent is the cornerstone of all clinical developments. Learn how Rave Enroll eliminates the risk of paper consent, transforming complex and tedious enrolment process into a simplified and patient-friendly one.
+							</div>
+							<div class="image-desc">
+								Rave Enroll Infographic | Roche Webinar
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page-content">
+				<div class="content-title text-center">
+					<div class="content-title-big">
+						PATIENT-CENTRIC CLINICAL TRIAL
+					</div>
+					<div class="content-title-small">
+						To select and download these assets, please fill out the form below:
+					</div>
+				</div>
+				<div class="content-download-form">
+					<form>
+						<div class="container mb-4">
+							<div class="row">
+								<div class="col-md-12 asset d-flex flex-column">
+									<labe class="asset-title">Asset</labe>
+									<input class="asset-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 mb-4 company d-flex flex-column">
+									<labe class="company-title">Compnay*</labe>
+									<input class="company-content" />
+								</div>
+								<div class="col-md-6 mb-4 title d-flex flex-column">
+									<labe class="title-title">Title</labe>
+									<input class="title-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 mb-4 fname d-flex flex-column">
+									<labe class="fname-title">First Name</labe>
+									<input class="fname-content" />
+								</div>
+								<div class="col-md-6 mb-4 lname d-flex flex-column">
+									<labe class="lname-title">Last Name</labe>
+									<input class="lname-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 mb-4 email-address d-flex flex-column">
+									<labe class="email-address-title">Email Address*</labe>
+									<input class="email-address-content" />
+								</div>
+								<div class="col-md-6 mb-4 business-phone d-flex flex-column">
+									<labe class="business-phone-title">Business phone*</labe>
+									<input class="business-phone-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 mb-4 country d-flex flex-column">
+									<labe class="country-title">Country</labe>
+									<input class="country-content" />
+								</div>
+								<div class="col-md-6 mb-4 state-province d-flex flex-column">
+									<labe class="state-province-title">State or Province*</labe>
+									<input class="state-province-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-6 mb-4 functional-area d-flex flex-column">
+									<labe class="functional-area-title">Functional Area*</labe>
+									<input class="functional-area-content" />
+								</div>
+								<div class="col-md-6 mb-4 level d-flex flex-column">
+									<labe class="level-title">Level*</labe>
+									<input class="level-content" />
+								</div>
+							</div>
+						</div>
+						<div class="container mb-4">
+							<div class="row">
+								<div class="policy d-flex mb-5">
+									<input class="mr-3" type="checkbox" />
+									<div class="policy-desc">
+										I have read and understand MediData <a href="">Privacy Policy</a>.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex justify-content-center">
+							<button class="download-btn">DOWNLOAD NOW</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="page-bottom-bar pt-4 pb-2">
+				<div class="page-bottom-bar-medidata">
+					<a href="">
+						<i class="fa fa-th"></i>
+					</a>
+					medidata
+				</div>
+				<div class="page-bottom-bar-social">
+					<div class="icon">
+						<a href="https://www.facebook.com">
+							<i class="fa fa-facebook"></i>
+						</a>
+						<a href="https://twitter.com">
+							<i class="fa fa-twitter"></i>
+						</a>
+						<a href="https://www.linkedin.com/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+						<a href="http://www.youtube.com/">
+							<i class="fa fa-youtube"></i>
+						</a>
+					</div>
+					<div class="phone">+987654321</div>
+				</div>
+				<div class="page-bottom-bar-border"></div>
+				<div class="page-bottom-bar-cright">
+					<div class="copyright">Copyright @ 2019 ...</div>
+					<div class="end d-flex justify-content-end">
+						<ul>
+							<li class="pl-2 pr-2">1</li>
+							<li class="pl-2 pr-2">2</li>
+							<li class="pl-2 pr-2">3</li>
+							<li class="pl-2">4</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
